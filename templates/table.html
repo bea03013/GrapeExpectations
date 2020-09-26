@@ -130,6 +130,13 @@ body {
 
 <div style="padding:0 16px">
 
+  <!-- --------------------------center this title -->
+  <br>
+
+  <h1> Title here </h1>
+  <p>________________________________________________________________________________________________________________________________________________________________</p>
+  <p>Description............ </p>
+  <br>
 
   <section class="latest section">
     <div class="section-inner shadow-sm rounded">
@@ -140,14 +147,17 @@ body {
                 
                 <!-- <div class="featured-image has-ribbon"> -->
                     <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
-                    <img class="img-fluid project-image rounded shadow-sm" src="../static/images/wine2.jpg" height= "550px" width= "1100"alt="Automation" />
+                    <img class="img-fluid project-image rounded shadow-sm" src="../static/images/Winecheese.jpg" height= "550px" width= "1100px"alt="Wine" />
                     </a>
                    
                 </div>
                 
                 <h3 class="title mb-3"><a href="link here" target="_blank"></a></h3>
                     
-                 
+                <div class="desc text-left"> 
+                  <p>________________________________________________________________________________________________________________________________________________________________</p>                                   
+                
+                </div>     
 
  <!-- topic2
  <div class="desc col-md-8 col-12">
@@ -179,84 +189,94 @@ body {
 </head>
 <body>
 
-<!-- Our CSS -->
-<link rel="stylesheet" type="text/css" href="static/css/style.css">
-</head>
-      
-      <div style="padding:0 16px">
-    <div class="hero text-center">
-      <h1>Wine Quality</h1>
-      <p></p>
-    </div>
-    <div class="container">
-      <div class="row margin-top-50">
-        <div class="col-md-2">
-          <aside class="filters">
-            <div class="panel panel-default">
-              <div class="panel-heading">Filter Search</div>
-              <div class="panel-body">
-                <form>
-                  <div class="form-group">
-                    <ul class="list-group" id="filters">
-                      <li class="filter list-group-item">
-                        <label for="date">Enter Wine Color</label>
-                        <input class="form-control" id="color" type="text" placeholder="red or white">
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="city">Wine Quality</label>
-                        <input class="form-control" id="wine quality" type="text" placeholder="1-10">
-                      <!-- </li>
-                      <li class="filter list-group-item">
-                        <label for="shape">Enter pH</label>
-                        <input class="form-control" id="pH" type="text" placeholder="3.51">
-                      </li>
-                      <li class="filter list-group-item">
-                        <label for="state">Enter Alcohol</label>
-                        <input class="form-control" id="alchohol" type="text" placeholder="9.4">
-                      </li> -->
-                      <!-- <li class="filter list-group-item">
-                        <label for="country">Enter a Country</label>
-                        <input class="form-control" id="country" type="text" placeholder="us">
-                      </li> -->
-                    </ul>
-                  </div>
-                  <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-                </form>
+  <div class="hero text-center">
+    <h1> Wine Quality</h1>
+    <p></p>
+  </div>
+  <div class="container">
+    <div class="row margin-top-50">
+      <div class="col-md-2">
+        <aside class="filters">
+          <div class="panel panel-default">
+            <div class="panel-heading">Filter Search</div>
+            <div class="panel-body">
+              <div class="form-group">
+                <ul class="list-group" id="filters">
+                  <li class="filter list-group-item">
+                    <label for="date">Enter Wine Color</label>
+                    <input class="form-control" id="datetime" type="text" placeholder="white or red">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="city">Enter Quality</label>
+                    <input class="form-control" id="city" type="text" placeholder="1-10">
+                  </li>
+                  <!-- <li class="filter list-group-item">
+                    <label for="state">Enter a State</label>
+                    <input class="form-control" id="state" type="text" placeholder="ca">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="country">Enter a Country</label>
+                    <input class="form-control" id="country" type="text" placeholder="us">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="shape">Select a Shape</label>
+                    <input class="form-control" id="shape" type="text" placeholder="circle">
+                  </li> -->
+                </ul>
               </div>
+              <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
             </div>
-          </aside>
-        </div>
-        <div class="col-md-10">
-          <div id="table-area" class="">
-            <table id="ufo-table" class="table table-striped">
-              <thead>
-                <tr>
-                  <th class="table-head">Volatile Acidity</th>
-                  <th class="table-head">Density</th>
-                  <th class="table-head">Alcohol</th>
-                  <th class="table-head">pH</th>
-                  <th class="table-head">Residual Sugar</th>
-                  <th class="table-head">Sulphates</th>
-                  <th class="table-head">Chlorides</th>
-                  <th class="table-head">Color</th>
-                  <th class="table-head">Quality</th>
-                </tr>
-              </thead>
-              <tbody></tbody>
-            </table>
           </div>
+        </aside>
+      </div>
+      <div class="col-md-10">
+        <div id="table-area" class="">
+          <h1 class="text-center loader" id="loader">Loading...</h1>
+          <table id="ufo-table" class="table table-striped">
+            <thead>
+              <tr>
+                <th class="table-head">Volatile Acidity</th>
+                <th class="table-head">Density</th>
+                <th class="table-head">Alcohol</th>
+                <th class="table-head">pH</th>
+                <th class="table-head">Residual Sugar</th>
+                <th class="table-head">Sulphates</th>
+                <th class="table-head">Chlorides</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
       </div>
     </div>
-    <footer class="footer">
-      <!-- <span class="bottom">Wine Quality</span> -->
-    </footer>
   </div>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.11.0/d3.js"></script>
-  <script src="static/js/data.js"></script>
-  <script src="static/js/app.js"></script>
-</body>
+
+
+
+
+<!-- Leaflet JavaScript -->
 <script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
 <!-- D3 JavaScript -->
 <script src="https://d3js.org/d3.v5.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script> -->
+<!-- Our JavaScript -->
+<!-- <script type="text/javascript" src="static/js/config.js"></script> -->
+
+<!-- <script src="{{ url_for('static', filename='logic4.js') }}"></script> -->
+<script type="text/javascript" src="../static/js/logic4.js"></script>
+<script type="text/javascript" src="../static/js/logic3.js"></script>
+<script type="text/javascript" src="../static/js/logic1.js"></script>
+<script type="text/javascript" src="../static/app.js"></script>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h4>Copyright &copy; 2020 Wine Quality: Both Red and White wine data </h4>
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                
+    </footer><!--//footer-->
+
+
+
+
+</body>
 </html>

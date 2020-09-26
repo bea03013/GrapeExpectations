@@ -1,4 +1,4 @@
-d3.csv("../Resources/winequality.csv").then(function(data) {
+d3.csv("../Resources/winequality1.csv").then(function(data) {
     // console.log(data);
 
 // from data.js
