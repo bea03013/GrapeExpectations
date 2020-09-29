@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color:darkgray;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color:gainsboro;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+
+</head>
+<body>
+
+  <!-- NAV BAR -->
+<div class="navbar">
+  <a href="/">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="/">This project is for creating visualizations including a Python Flask–powered RESTful API, HTML/CSS, JavaScript, and a SQLite database. It is for............... machine learning req here. </a>
+  
+
+
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn"> Resources <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="https://www.kaggle.com/aleixdorca/wine-quality">Wine Quality: Both Red and White wine data.</a>
+    
+      
+      <!-- <a href="link here">Dataset Title</a> -->
+
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Visualizations <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="visualization1">Title1</a>
+      <a href="visualization2">Title2</a>
+      <a href="visualization3">Title3</a>
+      <!-- use route here not use filename.html file -->
+      <a href="test">Title4</a>
+      
+   
+    </div>
+  </div>
+
+<!-- added Machine learning to navbar -->
+  <div class="subnav">
+    <button class="subnavbtn">Machine Learning <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="table.html">Wine Quality</a>
+      <a href="ml.html">How Good is Your Wine?</a>
+      <a href="visualization3">Title3</a>
+      <!-- use route here not use filename.html file -->
+      <a href="test">Title4</a>
+      
+   
+    </div>
+  </div>
+
+<!-- end of added machine learning to navbar -->
+
+  <!-- put a link to our github project here -->
+  <!-- to open in a new tab use _blank -->
+  <a href="https://github.com/bea03013/Project_3" target="_blank">Contact Us</a>
+</div>
+
+<div style="padding:0 16px">
+
+
+  <section class="latest section">
+    <div class="section-inner shadow-sm rounded">
+
+        <div class="content">    
+                               
+            <div class="item featured text-center">
+                
+                <!-- <div class="featured-image has-ribbon"> -->
+                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
+                    <img class="img-fluid project-image rounded shadow-sm" src="../static/images/wine6.jpg" height= "550px" width= "1000px"alt="Wine" />
+                    </a>
+                   
+                </div>
+                
+                <h3 class="title mb-3"><a href="link here" target="_blank"></a></h3>
+                    
+                <div class="desc text-left"> 
+                  <p>________________________________________________________________________________________________________________________________________________________________</p>                                   
+                
+                </div>     
+
+
+
+
+
+<!-- Leaflet CSS -->
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
+
+<!-- Our CSS -->
+<link rel="stylesheet" type="text/css" href="static/css/style.css">
+</head>
+<body>
+
+  <div class="hero text-center">
+    <h1> Is it a Good Wine? Enter the numbers to find out!</h1>
+    <p></p>
+  </div>
+  <div class="container">
+    <div class="row margin-top-50">
+      <div class="col-md-2">
+        <aside class="filters">
+          <div class="panel panel-default">
+            <div class="panel-heading">Please enter the required numbers for your wine:</div>
+            <div class="panel-body">
+              <div class="form-group">
+                <ul class="list-group" id="filters">
+                  <li class="filter list-group-item">
+                    <label for="date">Enter Wine Color</label>
+                    <input class="form-control" id="color" type="text" placeholder="white or red">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="city">Enter Volatile Acidity</label>
+                    <input class="form-control" id="acidity" type="text" placeholder="Volatile Acidity">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="state">Enter Density</label>
+                    <input class="form-control" id="density" type="text" placeholder="Density">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="country">Enter Alcohol Content</label>
+                    <input class="form-control" id="alcohol" type="text" placeholder="Alcohol Content">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="shape">Enter pH</label>
+                    <input class="form-control" id="ph" type="text" placeholder="pH">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="shape">Enter Residual Sugar</label>
+                    <input class="form-control" id="sugar" type="text" placeholder="Residual Sugar">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="shape">Enter Sulphates</label>
+                    <input class="form-control" id="sulphates" type="text" placeholder="Sulphates">
+                  </li>
+                  <li class="filter list-group-item">
+                    <label for="shape">Enter Chlorides</label>
+                    <input class="form-control" id="chlorides" type="text" placeholder="Chlorides">
+                  </li>
+                </ul>
+              </div>
+              <button id="filter-btn" type="button" class="btn btn-default">Is it Good?</button>
+            </div>
+          </div>
+        </aside>
+      </div>
+      <!-- <div class="col-md-10">
+        <div id="table-area" class="">
+          <h1 class="text-center loader" id="loader">Loading...</h1>
+          <table id="ufo-table" class="table table-striped">
+            <thead>
+              <tr>
+                <th class="table-head">Volatile Acidity</th>
+                <th class="table-head">Density</th>
+                <th class="table-head">Alcohol</th>
+                <th class="table-head">pH</th>
+                <th class="table-head">Residual Sugar</th>
+                <th class="table-head">Sulphates</th>
+                <th class="table-head">Chlorides</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+        </div>
+      </div> -->
+    </div>
+  </div>
+
+
+
+
+<!-- Leaflet JavaScript -->
+<script src="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.js"></script>
+<!-- D3 JavaScript -->
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.2.3/d3.min.js"></script> -->
+<!-- Our JavaScript -->
+<!-- <script type="text/javascript" src="static/js/config.js"></script> -->
+
+<!-- <script src="{{ url_for('static', filename='logic4.js') }}"></script> -->
+<script type="text/javascript" src="../static/js/logic4.js"></script>
+<script type="text/javascript" src="../static/js/logic3.js"></script>
+<script type="text/javascript" src="../static/js/logic1.js"></script>
+<script type="text/javascript" src="../static/app.js"></script>
+
+    <footer class="footer">
+        <div class="container text-center">
+            <h4>Copyright &copy; 2020 Wine Quality: Both Red and White wine data </h4>
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                
+    </footer><!--//footer-->
+
+
+
+
+</body>
+</html>
