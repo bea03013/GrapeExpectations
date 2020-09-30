@@ -3,7 +3,6 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/journal/bootstrap.min.css">
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -97,8 +96,8 @@ body {
   <div class="subnav">
     <button class="subnavbtn">Visualizations <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="visualization1">Title1</a>
-      <a href="visualization2">Title2</a>
+      <a href="table.html">Wine Quality</a>
+      <a href="matrix.html">Heatmap</a>
       <a href="visualization3">Title3</a>
       <!-- use route here not use filename.html file -->
       <a href="test">Title4</a>
@@ -111,8 +110,8 @@ body {
   <div class="subnav">
     <button class="subnavbtn">Machine Learning <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="table.html">Wine Quality</a>
-      <a href="visualization2">Title2</a>
+      <a href="visualization1">Title1</a>
+      <a href="ml.html">How Good is Your Wine?</a>
       <a href="visualization3">Title3</a>
       <!-- use route here not use filename.html file -->
       <a href="test">Title4</a>
@@ -130,6 +129,13 @@ body {
 
 <div style="padding:0 16px">
 
+  <!-- --------------------------center this title -->
+  <br>
+
+  <h1> Analyzing the Quality of White and Red Wine </h1>
+  <p>________________________________________________________________________________________________________________________________________________________________</p>
+  <p>This correlation matrix gives a better understanding of the relationships between various variables for white and red wine. </p>
+  <br>
 
   <section class="latest section">
     <div class="section-inner shadow-sm rounded">
@@ -140,7 +146,7 @@ body {
                 
                 <!-- <div class="featured-image has-ribbon"> -->
                     <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
-                    <img class="img-fluid project-image rounded shadow-sm" src="../static/images/wine6.jpg" height= "550px" width= "1000px"alt="Wine" />
+                    <img class="img-fluid project-image rounded shadow-sm" src="../static/images/heatmap.png" height= "700px" width= "1300px"alt="Wine" />
                     </a>
                    
                 </div>
@@ -152,27 +158,7 @@ body {
                 
                 </div>     
 
- <!-- topic2
- <div class="desc col-md-8 col-12">
-  <h3 class="title"><a href="linkhere" target="_blank">Title here</a></h3>
-  <p class="mb-2">Description here... Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-  <p><a class="more-link" href="link to visuals here" target="_blank"><i class="fas fa-external-link-alt"></i>Read More</a></p> -->
-<!-- </div>                       
-</div> -->
-<!-- topic3-->
-<!-- <div class="item row">
-<a class="col-md-4 col-12" href="link here" target="_blank">
-<img class="img-fluid project-image rounded shadow-sm" src="../images/aFewPics.PNG" height= "160px" width= "250" alt="NFLPic"/>
-</a> -->
-<!-- <div class="desc col-md-8 col-12">
-  <h3 class="title"><a href="link here" target="_blank">Title here</a></h3>
-  <p class="mb-2">Description here...Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-  <p><a class="more-link" href="link here" target="_blank"><i class="fas fa-external-link-alt"></i>Read More</a></p>
-</div>//desc                          
-</div> -->
 
-
-<!-- </div> -->
 
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
@@ -181,71 +167,6 @@ body {
 <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 <body>
-
-  <div class="hero text-center">
-    <h1> Wine Quality</h1>
-    <p></p>
-  </div>
-  <div class="container">
-    <div class="row margin-top-50">
-      <div class="col-md-2">
-        <aside class="filters">
-          <div class="panel panel-default">
-            <div class="panel-heading">Filter Search</div>
-            <div class="panel-body">
-              <div class="form-group">
-                <ul class="list-group" id="filters">
-                  <li class="filter list-group-item">
-                    <label for="date">Enter Wine Color</label>
-                    <input class="form-control" id="Color" type="text" placeholder="white or red">
-                  </li>
-                  <li class="filter list-group-item">
-                    <label for="city">Enter Quality</label>
-                    <input class="form-control" id="Quality" type="text" placeholder="1-10">
-                  </li>
-                  <!-- <li class="filter list-group-item">
-                    <label for="state">Enter a State</label>
-                    <input class="form-control" id="state" type="text" placeholder="ca">
-                  </li>
-                  <li class="filter list-group-item">
-                    <label for="country">Enter a Country</label>
-                    <input class="form-control" id="country" type="text" placeholder="us">
-                  </li>
-                  <li class="filter list-group-item">
-                    <label for="shape">Select a Shape</label>
-                    <input class="form-control" id="shape" type="text" placeholder="circle">
-                  </li> -->
-                </ul>
-              </div>
-              <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
-            </div>
-          </div>
-        </aside>
-      </div>
-      <div class="col-md-10">
-        <div id="table-area" class="">
-          <h1 class="text-center loader" id="loader">Loading...</h1>
-          <table id="ufo-table" class="table table-striped">
-            <thead>
-              <tr>
-                <th class="table-head">Color</th>
-                <th class="table-head">Quality</th>
-                <th class="table-head">Volatile Acidity</th>
-                <th class="table-head">Density</th>
-                <th class="table-head">Alcohol</th>
-                <th class="table-head">pH</th>
-                <th class="table-head">Residual Sugar</th>
-                <th class="table-head">Sulphates</th>
-                <th class="table-head">Chlorides</th>
-              </tr>
-            </thead>
-            <tbody></tbody>
-          </table>
-        </div>
-      </div>
-    </div>
-  </div>
-
 
 
 
@@ -265,7 +186,7 @@ body {
 
     <footer class="footer">
         <div class="container text-center">
-            <h4>Copyright &copy; 2020 Wine Quality </h4>
+            <h4>Copyright &copy; 2020 Wine Quality</h4>
                 <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
                 
     </footer><!--//footer-->
