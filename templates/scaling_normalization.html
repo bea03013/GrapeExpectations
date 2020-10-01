@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <body style="background-color: whitesmoke; overflow-x: hidden;"></body>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
@@ -108,16 +109,15 @@ body {
 
 <!-- added Machine learning to navbar -->
 <div class="subnav">
-  <button class="subnavbtn">Machine Learning <i class="fa fa-caret-down"></i></button>
-  <div class="subnav-content">
-    <a href="knn.html">K Nearest Neighbors</a>
-    <a href="ml.html">How Good is Your Wine?</a>
-    <a href="residual_plot.html">Residual Plot</a>
-    <a href="scaling_normalization.html">Scaling Normalization</a>
-    <a href="scatter_plot.html">Scatter Plot</a>
+    <button class="subnavbtn">Machine Learning <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="knn.html">K Nearest Neighbors</a>
+      <a href="ml.html">How Good is Your Wine?</a>
+      <a href="residual_plot.html">Residual Plot</a>
+      <a href="scaling_normalization.html">Scaling Normalization</a>
+      <a href="scatter_plot.html">Scatter Plot</a>
+    </div>
   </div>
-</div>
-
 <!-- end of added machine learning to navbar -->
 
   <!-- put a link to our github project here -->
@@ -127,14 +127,29 @@ body {
 
 <div style="padding:0 16px">
 
-  <!-- --------------------------center this title -->
-  <br>
-
-  <h1> Analyzing the Quality of White and Red Wine </h1>
-  <p>________________________________________________________________________________________________________________________________________________________________</p>
-  <p>This correlation matrix gives a better understanding of the relationships between various variables for white and red wine. </p>
-  <br>
-
+  <div class="row">
+    <div class="col-sm-12 col-md-7 text-center">
+      <div class="container" style="margin-top: 10px; background: white; padding: 10px;">
+        <h1 style="color: rgb(16, 176, 168)">Scaling Normalization<hr/></h1>
+        <a target="_blank" href="../static/images/scaling_normalization.png">
+            <img src="../static/images/scaling_normalization.png" alt="residual plot" class="img-fluid">
+        </a>
+        <p style="color: rgb(57, 58, 58); text-align: justify;"> Description.... </p>
+      </div>
+    </div>
+  
+      <div class="col-sm-12 col-md-5 text-center">
+        <div class="container" style="margin-top: 10px; background: white; padding: 10px;">
+          <h1 style="color: rgb(16, 176, 168); text-align: center;">Visualizations<hr/></h1>
+         
+          <a href="importances.html"><img src="../static/images/importances.png" alt="ML"height=150px width=250px></a>
+          <a href="residual_plot.html"><img src="../static/images/residual_plot.png" alt="ML"height=150px width=250px></a>
+          <a href="knn.html"><img src="../static/images/knn.png" alt="ML"height=150px width=250px></a>
+          <a href="scatter_plot.html"><img src="../static/images/scatterplot-lineartrend.png" alt="ML"height=150px width=250px></a>
+          </div>
+        </div>
+      </div>
+  </div>
   <section class="latest section">
     <div class="section-inner shadow-sm rounded">
 
@@ -143,9 +158,9 @@ body {
             <div class="item featured text-center">
                 
                 <!-- <div class="featured-image has-ribbon"> -->
-                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
+                    <!-- <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
                     <img class="img-fluid project-image rounded shadow-sm" src="../static/images/heatmap.png" height= "700px" width= "1300px"alt="Wine" />
-                    </a>
+                    </a> -->
                    
                 </div>
                 
