@@ -37,7 +37,7 @@ def visualize_confidence_level(prediction_proba):
     
     vals = ax.get_xticks()
     for tick in vals:
-        ax.axvline(x=tick, linestyle='dashed', alpha=0.4, color='#eeeeee', zorder=1)
+        ax.axvline(x=tick, linestyle='dashed', alpha=0.4, color='#722f37', zorder=1)
 
     ax.set_xlabel(" Percentage(%) Confidence Level", labelpad=2, weight='bold', size=12)
     ax.set_ylabel("Wine Quality", labelpad=10, weight='bold', size=12)
@@ -97,7 +97,7 @@ user_input_df = get_user_input()
 processed_user_input = data_preprocessor(user_input_df)
 
 st.subheader('Do Your Thing!')
-st.write(user_input_df)
+
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
