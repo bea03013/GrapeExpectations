@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wine Analysis</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 body {
@@ -73,13 +74,9 @@ body {
 
   <!-- NAV BAR -->
 <div class="navbar">
-  <a href="/">Home</a>
+  <a href="index.html">Home</a>
   <div class="subnav">
-    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="/">This project is for creating visualizations including a Python Flask–powered RESTful API, HTML/CSS, JavaScript, and a SQLite database. It is for............... machine learning req here. </a>
-  
-
 
     </div>
   </div> 
@@ -88,9 +85,7 @@ body {
     <div class="subnav-content">
       <a href="https://www.kaggle.com/aleixdorca/wine-quality">Wine Quality: Both Red and White wine data.</a>
     
-      
-      <!-- <a href="link here">Dataset Title</a> -->
-
+  
     </div>
   </div> 
   <div class="subnav">
@@ -98,9 +93,9 @@ body {
     <div class="subnav-content">
       <a href="table.html">Wine Quality</a>
       <a href="matrix.html">Correlation Matrix</a>
-      <a href="visualization3">Title3</a>
-      <!-- use route here not use filename.html file -->
-      <a href="test">Title4</a>
+      <a href="../Tableau/WineQualAspects.html">Wine Quality Aspects</a>
+      <a href="winequalityimportances.html">Wine Quality Importances</a>
+      <a href="pairplot.html">Seaborn Plot</a>
       
    
     </div>
@@ -110,8 +105,8 @@ body {
 <div class="subnav">
   <button class="subnavbtn">Machine Learning <i class="fa fa-caret-down"></i></button>
   <div class="subnav-content">
-    <a href="knn.html">K Nearest Neighbors</a>
     <a href="ml.html">How Good is Your Wine?</a>
+    <a href="knn.html">K Nearest Neighbors</a>
     <a href="residual_plot.html">Residual Plot</a>
     <a href="scaling_normalization.html">Scaling Normalization</a>
     <a href="scatter_plot.html">Scatter Plot</a>
@@ -130,10 +125,9 @@ body {
   <!-- --------------------------center this title -->
   <br>
 
-  <h1 style="color: rgba(175, 64, 13, 0.74)"> Analyzing the Quality of White and Red Wine </h1>
-  <p>________________________________________________________________________________________________________________________________________________________________</p>
-  <p>This correlation matrix gives a better understanding of the relationships between various variables for white and red wine. As shown below, the darker the square, the greater the corelation between variables. Orange squares show a positive correlation and blue squares show a negaitve correlation. </p>
-  <br>
+  <h1 style="color: rgba(175, 64, 13, 0.74); text-align: center;"> Analyzing the Quality of White and Red Wine <hr></h1>
+  <!-- <p>________________________________________________________________________________________________________________________________________________________________</p> -->
+  <p><center>This correlation matrix gives a better understanding of the relationships between various variables for white and red wine. As shown below, the darker the square, the greater the corelation between variables. Orange squares show a positive correlation and blue squares show a negaitve correlation. </center></p>
 
   <section class="latest section">
     <div class="section-inner shadow-sm rounded">
@@ -143,16 +137,16 @@ body {
             <div class="item featured text-center">
                 
                 <!-- <div class="featured-image has-ribbon"> -->
-                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
+                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank"> <center>
                     <img class="img-fluid project-image rounded shadow-sm" src="../static/images/heatmap.png" height= "700px" width= "1300px"alt="Wine" />
-                    </a>
+                  </center></a>
                    
                 </div>
                 
                 <h3 class="title mb-3"><a href="link here" target="_blank"></a></h3>
                     
-                <div class="desc text-left"> 
-                  <p>________________________________________________________________________________________________________________________________________________________________</p>                                   
+                <div class="desc text-left"> <hr>
+                  <!-- <p>________________________________________________________________________________________________________________________________________________________________</p>                                    -->
                 
                 </div>     
 
@@ -182,12 +176,14 @@ body {
 <script type="text/javascript" src="../static/js/logic1.js"></script>
 <script type="text/javascript" src="../static/app.js"></script>
 
-    <footer class="footer">
-        <div class="container text-center">
-            <h4>Copyright &copy; 2020 Wine Quality</h4>
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                
-    </footer><!--//footer-->
+<footer class="footer">
+  <div class="container text-center">
+      <!-- <h4>Copyright &copy; 2020 Wine Quality Michelle Goodman, Tina Sparks, Polina Holland, Taniya Chhabra</h4> -->
+      <h4 style="text-align: left; width:49%; display: inline-block;">Copyright &copy; 2020 Wine Quality</h4>
+<h4 style="text-align: right; width:50%;  display: inline-block;">Michelle Goodman, Tina Sparks, Polina Holland, Taniya Chhabra</h4>​
+          <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+          
+</footer>
 
 
 

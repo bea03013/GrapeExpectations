@@ -2,6 +2,7 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wine Analysis</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.4.1/journal/bootstrap.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
@@ -73,15 +74,11 @@ body {
 </head>
 <body>
 
-  <!-- NAV BAR -->
-<div class="navbar">
+ <!-- NAV BAR -->
+ <div class="navbar">
   <a href="index.html">Home</a>
   <div class="subnav">
-    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="/">This project is for creating visualizations including a Python Flask–powered RESTful API, HTML/CSS, JavaScript, and a SQLite database. It is for............... machine learning req here. </a>
-  
-
 
     </div>
   </div> 
@@ -89,20 +86,16 @@ body {
     <button class="subnavbtn"> Resources <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
       <a href="https://www.kaggle.com/aleixdorca/wine-quality">Wine Quality: Both Red and White wine data.</a>
-    
-      
-      <!-- <a href="link here">Dataset Title</a> -->
-
     </div>
   </div> 
   <div class="subnav">
     <button class="subnavbtn">Visualizations <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="visualization1">Title1</a>
-      <a href="visualization2">Title2</a>
-      <a href="visualization3">Title3</a>
-      <!-- use route here not use filename.html file -->
-      <a href="test">Title4</a>
+      <a href="table.html">Wine Quality</a>
+      <a href="matrix.html">Correlation Matrix</a>
+      <a href="../Tableau/WineQualAspects.html">Wine Quality Aspects</a>
+      <a href="winequalityimportances.html">Wine Quality Importances</a>
+      <a href="pairplot.html">Seaborn Plot</a>
       
    
     </div>
@@ -112,14 +105,13 @@ body {
 <div class="subnav">
   <button class="subnavbtn">Machine Learning <i class="fa fa-caret-down"></i></button>
   <div class="subnav-content">
-    <a href="knn.html">K Nearest Neighbors</a>
     <a href="ml.html">How Good is Your Wine?</a>
+    <a href="knn.html">K Nearest Neighbors</a>
     <a href="residual_plot.html">Residual Plot</a>
     <a href="scaling_normalization.html">Scaling Normalization</a>
     <a href="scatter_plot.html">Scatter Plot</a>
   </div>
 </div>
-
 <!-- end of added machine learning to navbar -->
 
   <!-- put a link to our github project here -->
@@ -146,32 +138,12 @@ body {
                 
                 <h3 class="title mb-3"><a href="link here" target="_blank"></a></h3>
                     
-                <div class="desc text-left"> 
-                  <p><center>_________________________________________________________________________________________________________________________________________________________________________</center></p>                                  
+                <div class="desc text-left"> <hr>
+                  <!-- <p><center>_________________________________________________________________________________________________________________________________________________________________________</center></p>                                   -->
                 
                 </div>     
 
- <!-- topic2
- <div class="desc col-md-8 col-12">
-  <h3 class="title"><a href="linkhere" target="_blank">Title here</a></h3>
-  <p class="mb-2">Description here... Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-  <p><a class="more-link" href="link to visuals here" target="_blank"><i class="fas fa-external-link-alt"></i>Read More</a></p> -->
-<!-- </div>                       
-</div> -->
-<!-- topic3-->
-<!-- <div class="item row">
-<a class="col-md-4 col-12" href="link here" target="_blank">
-<img class="img-fluid project-image rounded shadow-sm" src="../images/aFewPics.PNG" height= "160px" width= "250" alt="NFLPic"/>
-</a> -->
-<!-- <div class="desc col-md-8 col-12">
-  <h3 class="title"><a href="link here" target="_blank">Title here</a></h3>
-  <p class="mb-2">Description here...Suspendisse in tellus dolor. Vivamus a tortor eu turpis pharetra consequat quis non metus. Aliquam aliquam, orci eu suscipit pellentesque, mauris dui tincidunt enim, eget iaculis ante dolor non turpis.</p>
-  <p><a class="more-link" href="link here" target="_blank"><i class="fas fa-external-link-alt"></i>Read More</a></p>
-</div>//desc                          
-</div> -->
 
-
-<!-- </div> -->
 
 <!-- Leaflet CSS -->
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.0-rc.3/dist/leaflet.css" />
@@ -202,18 +174,6 @@ body {
                     <label for="city">Enter Quality</label>
                     <input class="form-control" id="Quality" type="text" placeholder="1-10">
                   </li>
-                  <!-- <li class="filter list-group-item">
-                    <label for="state">Enter a State</label>
-                    <input class="form-control" id="state" type="text" placeholder="ca">
-                  </li>
-                  <li class="filter list-group-item">
-                    <label for="country">Enter a Country</label>
-                    <input class="form-control" id="country" type="text" placeholder="us">
-                  </li>
-                  <li class="filter list-group-item">
-                    <label for="shape">Select a Shape</label>
-                    <input class="form-control" id="shape" type="text" placeholder="circle">
-                  </li> -->
                 </ul>
               </div>
               <button id="filter-btn" type="button" class="btn btn-default">Filter Table</button>
@@ -262,12 +222,14 @@ body {
 <script type="text/javascript" src="../static/js/logic1.js"></script>
 <script type="text/javascript" src="../static/app.js"></script>
 
-    <footer class="footer">
-        <div class="container text-center">
-            <h4>Copyright &copy; 2020 Wine Quality </h4>
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                
-    </footer><!--//footer-->
+<footer class="footer">
+  <div class="container text-center">
+      <!-- <h4>Copyright &copy; 2020 Wine Quality Michelle Goodman, Tina Sparks, Polina Holland, Taniya Chhabra</h4> -->
+      <h4 style="text-align: left; width:49%; display: inline-block;">Copyright &copy; 2020 Wine Quality</h4>
+<h4 style="text-align: right; width:50%;  display: inline-block;">Michelle Goodman, Tina Sparks, Polina Holland, Taniya Chhabra</h4>​
+          <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+          
+</footer>
 
 
 

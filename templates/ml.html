@@ -2,8 +2,9 @@
 <html>
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wine Analysis</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css">
+<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"> -->
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -72,15 +73,11 @@ body {
 </head>
 <body>
 
-  <!-- NAV BAR -->
-<div class="navbar">
-  <a href="/">Home</a>
+ <!-- NAV BAR -->
+ <div class="navbar">
+  <a href="index.html">Home</a>
   <div class="subnav">
-    <button class="subnavbtn">About <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="/">This project is for creating visualizations including a Python Flask–powered RESTful API, HTML/CSS, JavaScript, and a SQLite database. It is for............... machine learning req here. </a>
-  
-
 
     </div>
   </div> 
@@ -89,37 +86,33 @@ body {
     <div class="subnav-content">
       <a href="https://www.kaggle.com/aleixdorca/wine-quality">Wine Quality: Both Red and White wine data.</a>
     
-      
-      <!-- <a href="link here">Dataset Title</a> -->
-
+  
     </div>
   </div> 
   <div class="subnav">
     <button class="subnavbtn">Visualizations <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="visualization1">Title1</a>
-      <a href="visualization2">Title2</a>
-      <a href="visualization3">Title3</a>
-      <!-- use route here not use filename.html file -->
-      <a href="test">Title4</a>
+      <a href="table.html">Wine Quality</a>
+      <a href="matrix.html">Correlation Matrix</a>
+      <a href="../Tableau/WineQualAspects.html">Wine Quality Aspects</a>
+      <a href="winequalityimportances.html">Wine Quality Importances</a>
+      <a href="pairplot.html">Seaborn Plot</a>
       
    
     </div>
   </div>
 
 <!-- added Machine learning to navbar -->
-  <div class="subnav">
-    <button class="subnavbtn">Machine Learning <i class="fa fa-caret-down"></i></button>
-    <div class="subnav-content">
-      <a href="table.html">Wine Quality</a>
-      <a href="ml.html">How Good is Your Wine?</a>
-      <a href="visualization3">Title3</a>
-      <!-- use route here not use filename.html file -->
-      <a href="test">Title4</a>
-      
-   
-    </div>
+<div class="subnav">
+  <button class="subnavbtn">Machine Learning <i class="fa fa-caret-down"></i></button>
+  <div class="subnav-content">
+    <a href="ml.html">How Good is Your Wine?</a>
+    <a href="knn.html">K Nearest Neighbors</a>
+    <a href="residual_plot.html">Residual Plot</a>
+    <a href="scaling_normalization.html">Scaling Normalization</a>
+    <a href="scatter_plot.html">Scatter Plot</a>
   </div>
+</div>
 
 <!-- end of added machine learning to navbar -->
 
@@ -194,12 +187,14 @@ body {
 <script type="text/javascript" src="../static/js/logic1.js"></script>
 <script type="text/javascript" src="../static/app.js"></script>
 
-    <footer class="footer">
-        <div class="container text-center">
-            <h4>Copyright &copy; 2020 Wine Quality: Both Red and White wine data </h4>
-                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-                
-    </footer><!--//footer-->
+<footer class="footer">
+  <div class="container text-center">
+      <!-- <h4>Copyright &copy; 2020 Wine Quality Michelle Goodman, Tina Sparks, Polina Holland, Taniya Chhabra</h4> -->
+      <h4 style="text-align: left; width:49%; display: inline-block;">Copyright &copy; 2020 Wine Quality</h4>
+<h4 style="text-align: right; width:50%;  display: inline-block;">Michelle Goodman, Tina Sparks, Polina Holland, Taniya Chhabra</h4>​
+          <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+          
+</footer>
 
 
 
