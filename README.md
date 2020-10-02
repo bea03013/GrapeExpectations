@@ -1,18 +1,14 @@
-## Project Website can be found here: https://bea03013.github.io/Project_3/
+## Grape Expectations
 
-# Project_3
+This was a collabrative project exploring data and trends relating to the quality of red and white wine.   that utelizes multiple libraries as well as machine learning and Tableau. 
 
-Find a problem worth solving, analyzing, or visualizing. Use ML in the context of technologies learned. You must use: Scikit-Learn and/or another machine learning library. Host application using Heroku or a tool of your choice.
-
-Python Pandas Python Matplotlib HTML/CSS/Bootstrap JavaScript Plotly JavaScript D3.js JavaScript Leaflet SQL Database MongoDB Database Google Cloud SQL Amazon AWS Tableau
+# View and explore the results of our research through multiple interactive visualizations here: https://bea03013.github.io/Project_3/
 
 
-Final Project exploring the data and trends relating to the quality of red and white wine.
-
-
-Websites/data being used:
+*Datasets pulled from the following sites:*
 
 https://www.kaggle.com/aleixdorca/wine-quality
 
-
 https://towardsdatascience.com/predicting-wine-quality-with-several-classification-techniques-179038ea6434
+
+Collaborators: Taniya Chhabra, Michelle Goodman, Polina Holland & Tina Sparks
