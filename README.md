@@ -2,7 +2,7 @@
 
 This was a collabrative project exploring data and trends relating to the quality of red and white wine.   that utelizes multiple libraries as well as machine learning and Tableau. 
 
-## View and explore the results of our research through multiple interactive visualizations here: https://bea03013.github.io/Project_3/
+## View and explore the results of our research through multiple interactive visualizations here: https://bea03013.github.io/GrapeExpectations/
 
 
 *Datasets pulled from the following sites:*
