@@ -4,7 +4,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wine Analysis</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootswatch/3.3.7/superhero/bootstrap.min.css"> -->
 <style>
 body {
   font-family: Arial, Helvetica, sans-serif;
@@ -73,9 +72,9 @@ body {
 </head>
 <body>
 
- <!-- NAV BAR -->
- <div class="navbar">
-  <a href="../index.html">Home</a>
+  <!-- NAV BAR -->
+<div class="navbar">
+  <a href="index.html">Home</a>
   <div class="subnav">
     <div class="subnav-content">
 
@@ -92,10 +91,11 @@ body {
   <div class="subnav">
     <button class="subnavbtn">Visualizations <i class="fa fa-caret-down"></i></button>
     <div class="subnav-content">
-      <a href="table.html">Wine Quality</a>
-      <a href="matrix.html">Correlation Matrix</a>
-      <a href="../Tableau/WineQualAspects.html">Wine Quality Aspects</a>
-      <a href="winequalityimportances.html">Wine Quality Importances</a>
+      <a href="templates/table.html">Wine Quality</a>
+      <a href="templates/matrix.html">Correlation Matrix</a>
+      <a href="Tableau/WineQualAspects.html">Wine Quality Aspects</a>
+      <a href="templates/winequalityimportances.html">Wine Quality Importances</a>
+ 
       
    
     </div>
@@ -105,24 +105,28 @@ body {
 <div class="subnav">
   <button class="subnavbtn">Machine Learning <i class="fa fa-caret-down"></i></button>
   <div class="subnav-content">
-    <a href="ml.html">How Good is Your Wine?</a>
-    <a href="knn.html">K Nearest Neighbors</a>
-    <a href="residual_plot.html">Residual Plot</a>
-    <a href="scaling_normalization.html">Scaling Normalization</a>
-    <a href="scatter_plot.html">Scatter Plot</a>
-    <a href="pairplot.html">Pair Plot</a>
+    <a href="templates/ml.html">How Good is Your Wine?</a>
+    <a href="templates/knn.html">K Nearest Neighbors</a>
+    <a href="templates/residual_plot.html">Residual Plot</a>
+    <a href="templates/scaling_normalization.html">Scaling Normalization</a>
+    <a href="templates/scatter_plot.html">Scatter Plot</a>
+    <a href="templates/pairplot.html">Pair Plot</a>
   </div>
 </div>
 
-<!-- end of added machine learning to navbar -->
 
-  <!-- put a link to our github project here -->
-  <!-- to open in a new tab use _blank -->
+
   <a href="https://github.com/bea03013/Project_3" target="_blank">Contact Us</a>
 </div>
 
 <div style="padding:0 16px">
 
+  <h1 style="color: rgba(176, 16, 16, 0.74); font-size:50px; font-family:fantasy"><center> Grape Expectations  </center><hr></h1>
+  <!-- <p><center>_________________________________________________________________________________________________________________________________________________________________________</center></p> -->
+  <p style="font-family:fantasy"><center>Providing customers with the world’s best wine is a booming industry. Wine sales in the United States increased in the last years and the market shows no sign of slowing. 
+    Any fruit is capable of being used for wine, but if it just says “wine” on the label, then it’s made with grapes. 
+    Wine is not only a great way to complement a good meal. According to many research studies, it is also filled with health benefits if consumed in reasonable amounts. 
+    We are here to help in determination of quality of wine based on our dataset. Join us on our adventure to find great wines!</center> </p>
 
   <section class="latest section">
     <div class="section-inner shadow-sm rounded">
@@ -132,19 +136,18 @@ body {
             <div class="item featured text-center">
                 
                 <!-- <div class="featured-image has-ribbon"> -->
-                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank">
-                    <!-- <img class="img-fluid project-image rounded shadow-sm" src="../static/images/wine6.jpg" height= "550px" width= "1000px"alt="Wine" /> -->
-                    </a>
+                    <a href="https://themes.3rdwavemedia.com/bootstrap-templates/startup/launch-bootstrap-4-template-for-saas-businesses/" target="_blank"><center>
+                    <img class="img-fluid project-image rounded shadow-sm" src="../static/images/wine.jpg" height= "580px" width= "1350px"alt="Wine" />
+                  </center></a>
                    
                 </div>
                 
                 <h3 class="title mb-3"><a href="link here" target="_blank"></a></h3>
                     
-                <div class="desc text-left"> 
-                  <p>________________________________________________________________________________________________________________________________________________________________</p>                                   
+                <div class="desc text-left"> <hr>
+                  <!-- <p>________________________________________________________________________________________________________________________________________________________________</p>                                    -->
                 
                 </div>     
-
 
 
 
@@ -156,19 +159,6 @@ body {
 <link rel="stylesheet" type="text/css" href="static/css/style.css">
 </head>
 <body>
-
-  <style>
-    html, body { height: 100%; }
-    body { overflow: hidden; margin: 0; }
-    iframe { height: 575px; width: 100%; frameborder: 0; }
-</style>
-  
-  <iframe src="https://bea03013ml.herokuapp.com/" >
-    <p>Your browser does not support iframes.</p>
-  </iframe>
-  
- 
-
 
 
 
@@ -187,14 +177,14 @@ body {
 <script type="text/javascript" src="../static/js/logic1.js"></script>
 <script type="text/javascript" src="../static/app.js"></script>
 
-<footer class="footer">
-  <div class="container text-center">
-      <!-- <h4>Copyright &copy; 2020 Wine Quality Michelle Goodman, Tina Sparks, Polina Holland, Taniya Chhabra</h4> -->
-      <h4 style="text-align: left; width:49%; display: inline-block;">Copyright &copy; 2020 Wine Quality</h4>
+    <footer class="footer">
+        <div class="container text-center">
+            <!-- <h4>Copyright &copy; 2020 Wine Quality Michelle Goodman, Tina Sparks, Polina Holland, Taniya Chhabra</h4> -->
+            <h4 style="text-align: left; width:49%; display: inline-block;">Copyright &copy; 2020 Wine Quality</h4>
 <h4 style="text-align: right; width:50%;  display: inline-block;">Michelle Goodman, Tina Sparks, Polina Holland, Taniya Chhabra</h4>​
-          <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
-          
-</footer>
+                <!--/* This template is free as long as you keep the attribution link below. Thank you for your support. :) If you'd like to use the template without the attribution, you can buy the commercial license via our website: themes.3rdwavemedia.com */-->
+                
+    </footer>
 
 
 
