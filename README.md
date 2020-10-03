@@ -9,6 +9,5 @@ This was a collabrative project exploring data and trends relating to the qualit
 
 https://www.kaggle.com/aleixdorca/wine-quality
 
-https://towardsdatascience.com/predicting-wine-quality-with-several-classification-techniques-179038ea6434
 
 Collaborators: Taniya Chhabra, Michelle Goodman, Polina Holland & Tina Sparks
